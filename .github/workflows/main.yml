@@ -26,3 +26,5 @@ jobs:
 
       - name: Build and Publish JAR
         run: mvn clean deploy --settings settings.xml
+        env:
+         GITHUB_TOKEN: ${{ secrets.MAVEN_GITHUB_TOKEN }}
